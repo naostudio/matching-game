@@ -1,11 +1,12 @@
 body {
   margin: 0;
   font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
-  color: #5f5852;
+  color: #6a5a4f;
   background:
-    radial-gradient(circle at top left, rgba(244, 222, 214, 0.72) 0%, transparent 34%),
-    radial-gradient(circle at bottom right, rgba(222, 236, 224, 0.72) 0%, transparent 32%),
-    linear-gradient(180deg, #fffdf9 0%, #f7f3ee 100%);
+    radial-gradient(circle at top left, rgba(255, 214, 179, 0.75) 0%, transparent 34%),
+    radial-gradient(circle at top right, rgba(255, 238, 176, 0.65) 0%, transparent 30%),
+    radial-gradient(circle at bottom right, rgba(198, 231, 193, 0.70) 0%, transparent 30%),
+    linear-gradient(180deg, #fffdf6 0%, #fff8ef 100%);
   min-height: 100vh;
 }
 
@@ -21,12 +22,12 @@ body {
 .card {
   width: 100%;
   max-width: 760px;
-  padding: 54px 34px;
+  padding: 56px 34px;
   text-align: center;
-  background: rgba(255, 252, 248, 0.92);
-  border: 1px solid #eadfd5;
+  background: rgba(255, 252, 245, 0.92);
+  border: 1px solid #f3dfc9;
   border-radius: 30px;
-  box-shadow: 0 16px 36px rgba(151, 131, 111, 0.12);
+  box-shadow: 0 16px 36px rgba(214, 170, 118, 0.14);
   backdrop-filter: blur(5px);
 }
 
@@ -35,7 +36,7 @@ body {
   font-size: 12px;
   letter-spacing: 0.18em;
   text-transform: lowercase;
-  color: #b28f84;
+  color: #d29474;
 }
 
 h1 {
@@ -43,7 +44,7 @@ h1 {
   font-size: 40px;
   line-height: 1.3;
   font-weight: 700;
-  color: #6d625b;
+  color: #7b6555;
 }
 
 .lead {
@@ -51,7 +52,7 @@ h1 {
   max-width: 34em;
   font-size: 18px;
   line-height: 1.95;
-  color: #6d645d;
+  color: #756559;
 }
 
 .button-wrap {
@@ -69,9 +70,9 @@ h1 {
 }
 
 .main-button {
-  color: #fffdfb;
-  background: linear-gradient(135deg, #d8a28f 0%, #b8b07a 45%, #8eb7a2 100%);
-  box-shadow: 0 10px 22px rgba(142, 183, 162, 0.22);
+  color: #fffdf8;
+  background: linear-gradient(135deg, #f3a77b 0%, #f0c768 48%, #9fcd8a 100%);
+  box-shadow: 0 10px 22px rgba(240, 199, 104, 0.28);
 }
 
 .main-button:hover {
@@ -83,7 +84,7 @@ h1 {
   margin: 0;
   font-size: 14px;
   line-height: 1.9;
-  color: #94877d;
+  color: #9b8878;
 }
 
 @media (max-width: 640px) {
