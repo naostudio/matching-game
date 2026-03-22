@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>デザイン見本</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+      background: #f7f5f3;
+      color: #5e5552;
+      padding: 32px 16px 60px;
+    }
+
+    .page-title {
+      text-align: center;
+      font-size: 28px;
+      margin: 0 0 10px;
+      color: #6b615f;
+    }
+
+    .page-sub {
+      text-align: center;
+      margin: 0 0 32px;
+      color: #8a7f7a;
+      line-height: 1.8;
+    }
+
+    .grid {
+      max-width: 1300px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .sample {
+      border-radius: 28px;
+      padding: 36px 24px;
+      text-align: center;
+      box-sizing: border-box;
+      min-height: 520px;
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .label {
+      margin: 0 0 20px;
+      font-size: 13px;
+      letter-spacing: 0.18em;
+    }
+
+    .sample h2 {
+      margin: 0 0 18px;
+      font-size: 36px;
+      line-height: 1.3;
+    }
+
+    .lead {
+      margin: 0 auto 28px;
+      font-size: 18px;
+      line-height: 1.9;
+      max-width: 16em;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: 999px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .subtext {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    /* 1. 上品やわらか */
+    .elegant {
+      background:
+        radial-gradient(circle at top left, rgba(233, 214, 220, 0.65) 0%, transparent 34%),
+        radial-gradient(circle at bottom right, rgba(225, 220, 237, 0.7) 0%, transparent 30%),
+        linear-gradient(180deg, #fffdfa 0%, #f8f5f7 100%);
+      color: #5f555a;
+      box-shadow: 0 18px 40px rgba(124, 103, 114, 0.10);
+    }
+
+    .elegant .label { color: #a88a95; }
+    .elegant h2 { color: #6e5b63; }
+    .elegant .lead { color: #6b6065; }
+    .elegant .subtext { color: #93858c; }
+    .elegant .button {
+      color: #fff;
+      background: linear-gradient(135deg, #b98d9d 0%, #a188b8 100%);
+      box-shadow: 0 10px 22px rgba(161, 136, 184, 0.22);
+    }
+
+    /* 2. 雑貨屋さんナチュラル */
+    .zakka {
+      background:
+        radial-gradient(circle at top left, rgba(244, 222, 214, 0.72) 0%, transparent 34%),
+        radial-gradient(circle at bottom right, rgba(222, 236, 224, 0.72) 0%, transparent 32%),
+        linear-gradient(180deg, #fffdf9 0%, #f7f3ee 100%);
+      color: #5f5852;
+      box-shadow: 0 16px 36px rgba(151, 131, 111, 0.10);
+    }
+
+    .zakka .label { color: #b28f84; }
+    .zakka h2 { color: #6d625b; }
+    .zakka .lead { color: #6d645d; }
+    .zakka .subtext { color: #94877d; }
+    .zakka .button {
+      color: #fffdfb;
+      background: linear-gradient(135deg, #d8a28f 0%, #b8b07a 45%, #8eb7a2 100%);
+      box-shadow: 0 10px 22px rgba(142, 183, 162, 0.22);
+    }
+
+    /* 3. 暮らしのメモ帳風 */
+    .memo {
+      background:
+        linear-gradient(180deg, #fffefb 0%, #f5f1ea 100%);
+      color: #5f584f;
+      box-shadow: 0 14px 30px rgba(140, 127, 105, 0.08);
+      border: 1px solid #ebe2d4;
+    }
+
+    .memo .label { color: #a3907a; }
+    .memo h2 { color: #675f55; }
+    .memo .lead { color: #6a645c; }
+    .memo .subtext { color: #8f867d; }
+    .memo .button {
+      color: #fffdfa;
+      background: linear-gradient(135deg, #b89d84 0%, #9ca98a 100%);
+      box-shadow: 0 8px 18px rgba(156, 169, 138, 0.20);
+    }
+
+    @media (max-width: 640px) {
+      .sample {
+        min-height: auto;
+        padding: 30px 20px;
+      }
+
+      .sample h2 {
+        font-size: 30px;
+      }
+
+      .lead {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="page-title">マッチングゲーム デザイン見本</h1>
+  <p class="page-sub">
+    3つの雰囲気を並べて比較するためのサンプルです。<br>
+    好みの方向を決めてから本番ページに反映できます。
+  </p>
+
+  <div class="grid">
+    <section class="sample elegant">
+      <p class="label">上品やわらか</p>
+      <h2>マッチングゲーム</h2>
+      <p class="lead">
+        左と右の項目を組み合わせて遊ぶ、<br>
+        やさしく上品な雰囲気のシンプルなクイズゲームです。
+      </p>
+      <a href="#" class="button">ゲームで遊ぶ</a>
+      <p class="subtext">
+        少しずつ整えながら、心地よく遊べるページに育てていきます。
+      </p>
+    </section>
+
+    <section class="sample zakka">
+      <p class="label">雑貨屋さんナチュラル</p>
+      <h2>マッチングゲーム</h2>
+      <p class="lead">
+        左と右の項目を組み合わせて遊ぶ、<br>
+        ほっとする雰囲気のシンプルなクイズゲームです。
+      </p>
+      <a href="#" class="button">ゲームで遊ぶ</a>
+      <p class="subtext">
+        少しずつページを育てながら、気軽に遊べる場所にしていきます。
+      </p>
+    </section>
+
+    <section class="sample memo">
+      <p class="label">暮らしのメモ帳風</p>
+      <h2>マッチングゲーム</h2>
+      <p class="lead">
+        左と右の項目を組み合わせて遊ぶ、<br>
+        生活の中でやさしく楽しめるシンプルなクイズゲームです。
+      </p>
+      <a href="#" class="button">ゲームで遊ぶ</a>
+      <p class="subtext">
+        日々のメモのように、少しずつ整えながら育てていくページです。
+      </p>
+    </section>
+  </div>
+</body>
+</html>
